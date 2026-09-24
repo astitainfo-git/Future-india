@@ -1,0 +1,15 @@
+{
+  "name": "futureindiaexpo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Future India Export — React frontend and Express API, deployed as one app",
+  "scripts": {
+    "build": "npm --prefix futureindiaexpo-client ci && npm --prefix futureindiaexpo-client run build && npm --prefix futureindiaexpo-server ci --omit=dev",
+    "start": "node futureindiaexpo-server/src/server.js",
+    "dev:server": "npm --prefix futureindiaexpo-server run dev",
+    "dev:client": "npm --prefix futureindiaexpo-client run dev"
+  },
+  "engines": {
+    "node": ">=20.6"
+  }
+}
